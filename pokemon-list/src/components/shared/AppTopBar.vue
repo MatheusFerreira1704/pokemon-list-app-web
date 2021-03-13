@@ -31,19 +31,23 @@
           active-class="red darken-1
 "
         >
-          <v-list-item>
-            <v-list-item-icon>
-              <v-icon>mdi-home</v-icon>
-            </v-list-item-icon>
-            <v-list-item-title>Inicio</v-list-item-title>
-          </v-list-item>
+          <router-link to="/">
+            <v-list-item>
+              <v-list-item-icon>
+                <v-icon>mdi-home</v-icon>
+              </v-list-item-icon>
+              <v-list-item-title>Início</v-list-item-title>
+            </v-list-item>
+          </router-link>
 
-          <v-list-item>
-            <v-list-item-icon>
-              <v-icon>mdi-paw</v-icon>
-            </v-list-item-icon>
-            <v-list-item-title>Pokemons</v-list-item-title>
-          </v-list-item>
+          <router-link to="/PokemonLista">
+            <v-list-item>
+              <v-list-item-icon>
+                <v-icon>mdi-paw</v-icon>
+              </v-list-item-icon>
+              <v-list-item-title>Pokemons</v-list-item-title>
+            </v-list-item>
+          </router-link>
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
@@ -60,4 +64,8 @@ export default {
 };
 </script>
 
-<style scoped></style>>
+<style scoped>
+.app-to-bar a {
+  text-decoration: none;
+}
+</style>
